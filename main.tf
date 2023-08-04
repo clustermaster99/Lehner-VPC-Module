@@ -1,13 +1,9 @@
-locals {
-  create_vpc = var.create_vpc
-}
-
 ################################################################################
 # VPC
 ################################################################################
 
 resource "aws_vpc" "lehner-vpc" {
-  count      = local.create_vpc ? 1 : 0
+  create_vpc = true
   cidr_block = var.cidr
   tags = {
     "Name" = var.name
