@@ -6,6 +6,7 @@ terraform {
       configuration_aliases = [
           aws.dev1
       ]
+    }
   }
 }
 
