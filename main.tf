@@ -3,7 +3,6 @@
 ################################################################################
 
 resource "aws_vpc" "lehner-vpc" {
-  create_vpc = true
   cidr_block = var.cidr
   tags = {
     "Name" = var.name
