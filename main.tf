@@ -4,7 +4,7 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       configuration_aliases = [
-          aws.dev1
+          aws.lehner-vpc-dev1
       ]
     }
   }
